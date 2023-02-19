@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register">
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Password:"
+        android:digits="abcdefghijklmnopqrstuvwxyz1234567890!@#$%^*"
+        android:inputType="textPassword"
+        android:paddingLeft="25dp"
+        android:textColorHint="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.162"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Register"
+        android:textColor="@color/black"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.163" />
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Username:"
+        android:digits="abcdefghijklmnopqrstuvwxyz1234567890"
+        android:paddingLeft="25dp"
+        android:textColorHint="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.069"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/phoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Phone #:"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:paddingLeft="25dp"
+        android:textColorHint="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.552"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/ssn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="SSN:"
+        android:paddingLeft="25dp"
+        android:textColorHint="@color/black"
+        android:textSize="15dp"
+        android:inputType="numberPassword"
+        android:maxLength="9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.453"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/balance"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Initial balance:"
+        android:inputType="numberDecimal"
+        android:paddingLeft="25dp"
+        android:textColorHint="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.644"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/confirm_pass"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Confirm Password:"
+        android:digits="abcdefghijklmnopqrstuvwxyz1234567890!@#$%^*"
+        android:inputType="textPassword"
+        android:paddingLeft="25dp"
+        android:textColorHint="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.26"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Legal Name:"
+        android:paddingLeft="25dp"
+        android:digits="abcdefghijklmnopqrstuvwxyz "
+        android:textColorHint="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.361"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:onClick="submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/balance"
+        app:layout_constraintVertical_bias="0.198" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Already have an account?"
+        android:onClick="logIn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
